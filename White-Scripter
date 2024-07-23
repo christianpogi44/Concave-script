@@ -1,0 +1,26 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Name", "DarkTheme")
+local Tab = Window:NewTab("Scripts")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("Concave Script (Free item)", "ButtonInfo", function()
+while true do
+wait(0.1)
+local args = {
+    [1] = 2,
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 15
+    }
+}
+
+game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+end
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Credits 🤓")
+local Section = Tab:NewSection("White-Scripter")
+Section:NewButton("White-Scripter", "ButtonInfo", function()
+
+    print("Clicked")
+end)
